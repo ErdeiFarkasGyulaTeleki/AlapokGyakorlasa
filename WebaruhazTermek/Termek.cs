@@ -26,5 +26,17 @@ namespace WebaruhazTermek
                 else field = value;
             }
         }
+
+        public Termek(string _nev, int _egysegar, int _keszlet)
+        {
+            Nev = _nev;
+            Egysegar = _egysegar;
+            Keszlet = _keszlet;
+        }
+
+        public void Kiiras()
+        {
+            Console.WriteLine($"Termék neve: {Nev}, Egységár: {Egysegar} Ft, Készlet: {Keszlet} db");
+        }
     }
 }
