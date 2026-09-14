@@ -26,6 +26,7 @@ namespace Raktarkezelo
             }
 
             dbSzam += db;
+            Console.WriteLine($"Sikeresen hozzáadott {db} db {CikkNev} cikket, így {dbSzam} db van a raktárban.");
         }
 
         public void Kiadas(int db)
@@ -43,6 +44,7 @@ namespace Raktarkezelo
             }
 
             dbSzam -= db;
+            Console.WriteLine($"Sikeresen kivett {db} db {CikkNev} cikket, így {dbSzam} db van a raktárban.");
         }
 
         public static double BruttoArSzamitas(double nettoAr)
