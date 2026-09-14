@@ -8,6 +8,11 @@ namespace Mertekegyseg
     {
         public double Szorzo;
 
+        public Atvalto(double _szorzo)
+        {
+            Szorzo = _szorzo;
+        }
+
         public static double KmBolMeter(double km)
         {
             return km * 1000;
