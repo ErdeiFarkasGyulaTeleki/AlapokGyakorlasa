@@ -4,7 +4,25 @@ using System.Text;
 
 namespace WebaruhazTermek
 {
-    internal class Termek
+    public class Termek
     {
+        public string Nev { get; set; }
+        public int Egysegar
+        {
+            get;
+            set
+            {
+                if (value < 1) field = 1;
+            }
+        }
+        
+        public int Keszlet
+        {
+            get;
+            set
+            {
+                if (value < 0) field = 0;
+            }
+        }
     }
 }
