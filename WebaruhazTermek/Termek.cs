@@ -13,6 +13,7 @@ namespace WebaruhazTermek
             set
             {
                 if (value < 1) field = 1;
+                else field = value;
             }
         }
         
@@ -22,6 +23,7 @@ namespace WebaruhazTermek
             set
             {
                 if (value < 0) field = 0;
+                else field = value;
             }
         }
     }
